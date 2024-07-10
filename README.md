@@ -1,0 +1,1 @@
+This repository houses the AWS CLI Commands used to configure a Terraform backend using S3 and DynamoDB, along with Terraform Resource Blocks for creating VPCs, and NAT gateway modules using Terraform Modules
