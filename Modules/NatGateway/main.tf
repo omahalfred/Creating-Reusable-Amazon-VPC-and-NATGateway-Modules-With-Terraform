@@ -25,7 +25,7 @@ resource "aws_nat_gateway" "nat_gateway_az1" {
     Name = "nat_gateway_az1"
   }
 
-  # to ensure proper ordering, it is recommended to add an explicit dependency
+  # calling explicit dependency
   depends_on = [var.internet_gateway]
 }
 
@@ -38,7 +38,7 @@ resource "aws_nat_gateway" "nat_gateway_az2" {
     Name = "nat_gateway_az2"
   }
 
-  # to ensure proper ordering, it is recommended to add an explicit dependency on the Internet Gateway for the VPC.
+  # calling an explicit dependency .
   depends_on = [var.internet_gateway]
 }
 
